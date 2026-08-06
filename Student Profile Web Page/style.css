@@ -1,0 +1,245 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Inter","Segoe UI",Arial,sans-serif;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+background:#f8fafc;
+color:#1e293b;
+}
+header{
+background:#0f172a;
+padding:20px 0;
+position:sticky;
+top:0;
+z-index:10;
+}
+.navbar{
+width:90%;
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.navbar h2{
+color:white;
+font-size:28px;
+}
+nav a{
+color:#cbd5e1;
+text-decoration:none;
+margin-left:30px;
+font-size:16px;
+}
+nav a:hover{
+color:white;
+}
+.hero{
+width:90%;
+max-width:1200px;
+margin:70px auto;
+display:flex;
+align-items:center;
+gap:60px;
+background:white;
+padding:50px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+.student-image img{
+width:230px;
+height:230px;
+border-radius:50%;
+object-fit:cover;
+border:8px solid #2563eb;
+}
+.intro h1{
+font-size:50px;
+color:#0f172a;
+margin-bottom:10px;
+}
+.intro h3{
+color:#2563eb;
+font-size:24px;
+margin-bottom:20px;
+}
+.intro p{
+font-size:18px;
+line-height:1.7;
+color:#64748b;
+margin-bottom:30px;
+}
+button{
+background:#2563eb;
+border:none;
+color:white;
+padding:14px 30px;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+button:hover{
+background:#1d4ed8;
+}
+.profile-section{
+width:90%;
+max-width:1200px;
+margin:50px auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+.card{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+.card h2{
+color:#2563eb;
+margin-bottom:20px;
+}
+.card p{
+margin:15px 0;
+font-size:17px;
+color:#475569;
+}
+.performance{
+background:#0f172a;
+padding:60px 5%;
+text-align:center;
+color:white;
+}
+.performance h2{
+font-size:36px;
+margin-bottom:40px;
+}
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+.stats div{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+}
+.stats h1{
+font-size:40px;
+color:#38bdf8;
+}
+.stats p{
+margin-top:10px;
+color:#cbd5e1;
+}
+.skills{
+width:90%;
+max-width:1000px;
+margin:70px auto;
+}
+.skills h2,.achievement h2,.contact h2{
+text-align:center;
+font-size:36px;
+color:#0f172a;
+margin-bottom:35px;
+}
+.skill-box{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+.skill-box p{
+font-weight:600;
+margin:20px 0 8px;
+}
+.bar{
+height:12px;
+background:#e2e8f0;
+border-radius:20px;
+overflow:hidden;
+}
+.bar span{
+display:block;
+height:100%;
+background:#2563eb;
+border-radius:20px;
+}
+.achievement{
+background:#eff6ff;
+padding:60px 10%;
+}
+.achievement-box{
+max-width:800px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+.achievement-box p{
+padding:15px;
+font-size:18px;
+border-bottom:1px solid #e2e8f0;
+}
+.achievement-box p:last-child{
+border:none;
+}
+.contact{
+padding:60px 20px;
+text-align:center;
+background:#2563eb;
+color:white;
+}
+.contact h2{
+color:white;
+}
+.contact p{
+font-size:18px;
+margin:12px;
+}
+footer{
+background:#020617;
+color:white;
+text-align:center;
+padding:25px;
+}
+@media(max-width:900px){
+.hero{
+flex-direction:column;
+text-align:center;
+}
+.profile-section{
+grid-template-columns:1fr;
+}
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+}
+@media(max-width:600px){
+.navbar{
+flex-direction:column;
+}
+nav{
+margin-top:15px;
+}
+nav a{
+margin:10px;
+}
+.hero{
+padding:30px;
+}
+.intro h1{
+font-size:38px;
+}
+.stats{
+grid-template-columns:1fr;
+}
+}

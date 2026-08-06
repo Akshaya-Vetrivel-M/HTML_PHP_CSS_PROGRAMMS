@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Employee Email ID Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Employee Email ID Generator</h1>
+<p>HR Management System</p>
+</header>
+<div class="container">
+<form action="generate.php" method="POST">
+<h2>Employee Details</h2>
+<label>Employee Full Name</label>
+<input type="text" name="name" placeholder="Enter employee name" required>
+<label>Employee Department</label>
+<select name="department" required>
+<option value="">Select Department</option>
+<option>HR</option>
+<option>Finance</option>
+<option>IT</option>
+<option>Marketing</option>
+<option>Sales</option>
+</select>
+<button type="submit">Generate Email ID</button>
+</form>
+</div>
+<footer>
+Employee Management System
+</footer>
+</body>
+</html>

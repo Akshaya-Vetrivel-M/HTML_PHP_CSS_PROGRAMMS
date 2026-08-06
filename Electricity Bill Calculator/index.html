@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Electricity Bill Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Electricity Bill Calculator</h1>
+<p>Smart Energy Billing System</p>
+</header>
+<div class="container">
+<form action="bill.php" method="POST">
+<h2>Consumer Details</h2>
+<label>Consumer Name</label>
+<input type="text" name="name" placeholder="Enter consumer name" required>
+<label>Consumer Number</label>
+<input type="text" name="number" placeholder="Enter consumer number" required>
+<label>Units Consumed</label>
+<input type="number" name="units" min="0" placeholder="Enter electricity units" required>
+<button type="submit">Generate Bill</button>
+</form>
+</div>
+<footer>
+Electricity Billing Management System
+</footer>
+</body>
+</html>

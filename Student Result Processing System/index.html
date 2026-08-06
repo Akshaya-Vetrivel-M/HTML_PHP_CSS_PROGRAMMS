@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Student Result Processing System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Student Result Processing System</h1>
+<p>Academic Performance Management</p>
+</header>
+<div class="container">
+<form action="result.php" method="POST">
+<h2>Student Details</h2>
+<label>Student Name</label>
+<input type="text" name="name" required>
+<label>Register Number</label>
+<input type="text" name="regno" required>
+<label>Department</label>
+<input type="text" name="department" required>
+<h2>Enter Subject Marks</h2>
+<label>Subject 1 Mark</label>
+<input type="number" name="mark1" min="0" max="100" required>
+<label>Subject 2 Mark</label>
+<input type="number" name="mark2" min="0" max="100" required>
+<label>Subject 3 Mark</label>
+<input type="number" name="mark3" min="0" max="100" required>
+<label>Subject 4 Mark</label>
+<input type="number" name="mark4" min="0" max="100" required>
+<label>Subject 5 Mark</label>
+<input type="number" name="mark5" min="0" max="100" required>
+<button type="submit">Generate Result</button>
+</form>
+</div>
+<footer>
+Student Result Management System
+</footer>
+</body>
+</html>
