@@ -1,0 +1,524 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
+}
+
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+
+/* Header */
+
+header{
+    background:#0b3d91;
+    color:white;
+    padding:18px 0;
+}
+
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+
+.logo h2{
+    font-size:28px;
+}
+
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:16px;
+}
+
+
+nav a:hover{
+    color:#ffd700;
+}
+
+
+
+
+
+
+/* Home Banner */
+
+.hero{
+    height:450px;
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+    ),
+    url("college.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+    text-align:center;
+}
+
+
+
+.hero-content h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+
+
+.btn{
+
+    display:inline-block;
+    background:#0b3d91;
+    color:white;
+    padding:12px 25px;
+    border-radius:5px;
+    text-decoration:none;
+    margin-top:15px;
+
+}
+
+
+
+.btn:hover{
+    background:#06245a;
+}
+
+
+
+
+
+/* Page Banner */
+
+
+.page-banner{
+
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+
+}
+
+
+
+.page-banner h1{
+
+    font-size:38px;
+
+}
+
+
+
+
+
+/* Cards */
+
+
+.about{
+    padding:50px 0;
+}
+
+
+
+.about h2,
+.welcome h2{
+
+    text-align:center;
+    margin-bottom:30px;
+    color:#0b3d91;
+
+}
+
+
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+.card h3{
+
+    color:#0b3d91;
+    margin-bottom:15px;
+
+}
+
+
+
+.welcome{
+
+    background:white;
+    padding:35px;
+    margin-bottom:40px;
+    border-radius:10px;
+    text-align:center;
+
+}
+
+
+
+
+
+/* Admission Page */
+
+
+.admission-layout{
+
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:30px;
+    margin:40px auto;
+
+}
+
+
+
+.guidelines,
+.form-box,
+.contact-info,
+.contact-form{
+
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+.guidelines h2{
+
+    color:#0b3d91;
+    margin-bottom:15px;
+
+}
+
+
+
+.guidelines li{
+
+    margin:12px 0;
+
+}
+
+
+
+
+
+
+/* Forms */
+
+
+label{
+
+    display:block;
+    margin-top:15px;
+    margin-bottom:6px;
+    font-weight:600;
+
+}
+
+
+
+input,
+select,
+textarea{
+
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+    border-color:#0b3d91;
+
+}
+
+
+
+button{
+
+    width:100%;
+    padding:14px;
+    margin-top:25px;
+    background:#0b3d91;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+
+}
+
+
+
+button:hover{
+
+    background:#06245a;
+
+}
+
+
+
+
+
+/* Courses */
+
+
+.course-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin:40px 0;
+
+}
+
+
+
+.course-card{
+
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+
+
+.course-card h2{
+
+    color:#0b3d91;
+    margin-bottom:15px;
+
+}
+
+
+
+.course-card p{
+
+    margin-bottom:12px;
+
+}
+
+
+
+
+
+/* Contact */
+
+
+.contact-layout{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin:40px auto;
+
+}
+
+
+
+
+
+/* Acknowledgement */
+
+
+.ack{
+
+    width:700px;
+    max-width:90%;
+    margin:50px auto;
+    background:white;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+
+
+.ack h2{
+
+    text-align:center;
+    color:#0b3d91;
+    margin-bottom:20px;
+
+}
+
+
+
+.success{
+
+    text-align:center;
+    color:green;
+    margin-bottom:20px;
+
+}
+
+
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+
+
+td{
+
+    border:1px solid #ddd;
+    padding:12px;
+
+}
+
+
+
+td:first-child{
+
+    font-weight:bold;
+    background:#f2f2f2;
+
+}
+
+
+
+.actions{
+
+    margin-top:25px;
+    text-align:center;
+
+}
+
+
+
+.actions button{
+
+    width:auto;
+    padding:12px 25px;
+    margin:5px;
+
+}
+
+
+
+
+
+/* Footer */
+
+
+footer{
+
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+
+}
+
+
+
+
+
+/* Responsive Design */
+
+
+@media(max-width:900px){
+
+
+header .container{
+
+    flex-direction:column;
+
+}
+
+
+nav{
+
+    margin-top:15px;
+
+}
+
+
+.cards,
+.course-grid,
+.admission-layout,
+.contact-layout{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.hero-content h1{
+
+    font-size:32px;
+
+}
+
+
+}

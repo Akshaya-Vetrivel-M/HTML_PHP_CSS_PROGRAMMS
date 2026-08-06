@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FreshMart Billing System</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+<h1>FreshMart Supermarket</h1>
+<p>Billing Management System</p>
+</header>
+
+<div class="container">
+
+<form action="bill.php" method="POST">
+
+<h2>Customer Details</h2>
+
+<label>Customer Name</label>
+<input type="text" name="customer" required>
+
+<label>Mobile Number</label>
+<input type="tel" name="mobile" pattern="[0-9]{10}" required>
+
+<h2>Product Details</h2>
+
+<div id="items">
+
+<div class="item-row">
+
+<input type="text" name="product[]" placeholder="Product Name" required>
+
+<input type="number" name="qty[]" placeholder="Quantity" min="1" required>
+
+<input type="number" name="price[]" placeholder="Price" min="0" required>
+
+<button type="button" onclick="removeItem(this)">
+Remove
+</button>
+
+</div>
+
+</div>
+
+<button type="button" onclick="addItem()">
++ Add Item
+</button>
+
+<h2>Billing Details</h2>
+
+<label>Discount (%)</label>
+<input type="number" name="discount" value="5" min="0">
+
+<label>GST / Tax (%)</label>
+<input type="number" name="tax" value="18" min="0">
+
+<button type="submit">
+Generate Invoice
+</button>
+
+</form>
+
+</div>
+
+<footer>
+FreshMart Supermarket | Customer Care: +91 98765 43210
+</footer>
+
+</body>
+</html>
