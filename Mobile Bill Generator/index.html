@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mobile Bill Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="box">
+<h1>TeleConnect</h1>
+<p class="subtitle">Mobile Bill Generator</p>
+<form action="bill.php" method="post">
+<label>Customer Name</label>
+<input type="text" name="name" placeholder="Enter customer name" required>
+
+<label>Mobile Number</label>
+<input type="text" name="mobile" placeholder="Enter mobile number" required>
+
+<label>Tariff Plan</label>
+<select name="plan">
+<option value="Basic">Basic Plan</option>
+<option value="Premium">Premium Plan</option>
+<option value="Unlimited">Unlimited Plan</option>
+</select>
+
+<label>Call Usage (Minutes)</label>
+<input type="number" name="calls" placeholder="Enter call minutes" required>
+
+<label>Internet Usage (GB)</label>
+<input type="number" name="data" placeholder="Enter data usage" required>
+
+<label>SMS Count</label>
+<input type="number" name="sms" placeholder="Enter SMS count" required>
+
+<button type="submit">Generate Bill</button>
+</form>
+</div>
+</div>
+</body>
+</html>
