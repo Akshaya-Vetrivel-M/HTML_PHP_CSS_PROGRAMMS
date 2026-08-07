@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employee Information Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+<div class="side-panel">
+<h1>Employee Portal</h1>
+<p>Manage employee records securely and efficiently.</p>
+<div class="line"></div>
+<p>Human Resource Management System</p>
+</div>
+
+<div class="form-section">
+
+<div class="card">
+
+<h2>Create Employee Profile</h2>
+<p class="sub">Enter employee information below</p>
+
+<form action="profile.php" method="post">
+
+<div class="row">
+
+<div>
+<label>Employee Name</label>
+<input type="text" name="name" placeholder="Enter name" required>
+</div>
+
+<div>
+<label>Employee ID</label>
+<input type="text" name="id" placeholder="EMP001" required>
+</div>
+
+</div>
+<div class="row">
+
+<div>
+<label>Email Address</label>
+<input type="email" name="email" placeholder="example@gmail.com" required>
+</div>
+
+<div>
+<label>Phone Number</label>
+<input type="text" name="phone" placeholder="10 digit number" required>
+</div>
+
+</div>
+<label>Department</label>
+
+<select name="department" required>
+<option value="">Choose Department</option>
+<option>IT Department</option>
+<option>Finance</option>
+<option>Human Resources</option>
+<option>Marketing</option>
+<option>Operations</option>
+</select>
+<label>Designation</label>
+<input type="text" name="designation" placeholder="Employee Position" required>
+<label>Date of Joining</label>
+<input type="date" name="joining" required>
+<button type="submit">Generate Profile</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
