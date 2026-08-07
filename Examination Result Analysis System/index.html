@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Academic Result Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<div class="sidebar">
+<h1>EduTrack</h1>
+<p>Result Management System</p>
+<div class="menu">Dashboard</div>
+<div class="menu">Student Result</div>
+<div class="menu">Performance Report</div>
+</div>
+<div class="content">
+<div class="top">
+<h1>Examination Result Analysis</h1>
+<p>Generate student academic performance report</p>
+</div>
+<div class="form-card">
+<h2>Student Information</h2>
+<form action="result.php" method="post">
+<div class="grid">
+<div>
+<label>Student Name</label>
+<input type="text" name="name" required>
+</div>
+<div>
+<label>Register Number</label>
+<input type="text" name="regno" required>
+</div>
+<div>
+<label>Mathematics</label>
+<input type="number" name="math" min="0" max="100" required>
+</div>
+<div>
+<label>Physics</label>
+<input type="number" name="physics" min="0" max="100" required>
+</div>
+<div>
+<label>Chemistry</label>
+<input type="number" name="chemistry" min="0" max="100" required>
+</div>
+<div>
+<label>Computer Science</label>
+<input type="number" name="computer" min="0" max="100" required>
+</div>
+</div>
+<button>Generate Result</button>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
