@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employee Salary Processing System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Employee Salary Processing System</h1>
+</header>
+<section class="hero">
+<h2>Salary Management Portal</h2>
+<p>Calculate employee gross salary, deductions and net salary</p>
+</section>
+<div class="container">
+<form action="process.php" method="post">
+<h2>Employee Details</h2>
+<label>Employee Name</label>
+<input type="text" name="name" required>
+<label>Employee ID</label>
+<input type="text" name="id" required>
+<label>Basic Salary</label>
+<input type="number" name="basic" min="0" required>
+<label>HRA Percentage</label>
+<input type="number" name="hra" min="0" required>
+<label>DA Percentage</label>
+<input type="number" name="da" min="0" required>
+<label>Deduction Percentage</label>
+<input type="number" name="deduction" min="0" required>
+<button type="submit">Process Salary</button>
+</form>
+</div>
+<footer>
+<p>© 2026 Employee Salary Management System</p>
+</footer>
+</body>
+</html>
