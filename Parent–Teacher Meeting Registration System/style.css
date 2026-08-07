@@ -1,0 +1,170 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI",sans-serif;
+}
+body{
+background:#f8fafc;
+color:#1e293b;
+}
+.portal{
+display:flex;
+min-height:100vh;
+}
+.banner{
+width:38%;
+background:#164e63;
+color:white;
+padding:60px 45px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+.banner h1{
+font-size:42px;
+color:#67e8f9;
+}
+.banner p{
+margin-top:15px;
+line-height:1.6;
+color:#cffafe;
+}
+.feature{
+margin-top:50px;
+background:#155e75;
+padding:25px;
+border-radius:15px;
+}
+.booking-panel{
+width:62%;
+padding:45px;
+}
+.booking-panel form{
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 15px 35px rgba(0,0,0,.1);
+}
+.booking-panel h2{
+font-size:32px;
+color:#164e63;
+}
+.subtitle{
+margin:10px 0 25px;
+color:#64748b;
+}
+.fields{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+label{
+display:block;
+font-weight:600;
+margin-bottom:8px;
+}
+input,select,textarea{
+width:100%;
+padding:13px;
+border:1px solid #cbd5e1;
+border-radius:9px;
+}
+textarea{
+height:100px;
+margin-bottom:15px;
+}
+button{
+width:100%;
+padding:15px;
+background:#0891b2;
+color:white;
+border:none;
+border-radius:9px;
+font-size:16px;
+cursor:pointer;
+}
+button:hover{
+background:#0e7490;
+}
+.confirmation-page{
+min-height:100vh;
+background:#ecfeff;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+.ticket{
+width:800px;
+background:white;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+overflow:hidden;
+}
+.ticket-header{
+background:#164e63;
+color:white;
+padding:35px;
+text-align:center;
+}
+.appointment-id{
+text-align:center;
+padding:30px;
+background:#cffafe;
+}
+.appointment-id h1{
+font-size:45px;
+color:#164e63;
+}
+.details{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+padding:35px;
+}
+.detail-box{
+background:#f8fafc;
+padding:25px;
+border-radius:12px;
+}
+.detail-box h3,.purpose h3{
+color:#164e63;
+margin-bottom:15px;
+}
+.detail-box p{
+margin:10px 0;
+}
+.purpose{
+margin:0 35px 30px;
+background:#f1f5f9;
+padding:25px;
+border-radius:12px;
+}
+.ticket a{
+display:block;
+margin:30px 35px;
+padding:14px;
+background:#0891b2;
+color:white;
+text-align:center;
+text-decoration:none;
+border-radius:8px;
+}
+.error{
+background:#fee2e2;
+color:#991b1b;
+padding:25px;
+border-radius:12px;
+}
+@media(max-width:900px){
+.portal{
+flex-direction:column;
+}
+.banner,.booking-panel{
+width:100%;
+}
+.fields,.details{
+grid-template-columns:1fr;
+}
+}
