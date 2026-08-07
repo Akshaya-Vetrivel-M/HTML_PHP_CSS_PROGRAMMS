@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ClientSphere | Customer Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+<h1>ClientSphere</h1>
+<p>Customer Relationship Management</p>
+<div class="nav">Registration</div>
+<div class="nav">Customer Records</div>
+<div class="nav">Account Management</div>
+<div class="company">
+<h3>Business Portal</h3>
+<p>Secure customer onboarding system</p>
+</div>
+</aside>
+<main class="content">
+<div class="heading">
+<h2>New Customer Registration</h2>
+<p>Create a professional customer profile</p>
+</div>
+<div class="form-container">
+<form action="register.php" method="post">
+<div class="form-grid">
+<div>
+<label>Full Name</label>
+<input type="text" name="name" required>
+</div>
+<div>
+<label>Email Address</label>
+<input type="email" name="email" required>
+</div>
+<div>
+<label>Phone Number</label>
+<input type="text" name="phone" required>
+</div>
+<div>
+<label>Date Of Birth</label>
+<input type="date" name="dob" required>
+</div>
+<div>
+<label>Customer Category</label>
+<select name="category" required>
+<option value="">Choose Category</option>
+<option>Regular Customer</option>
+<option>Premium Customer</option>
+<option>Corporate Customer</option>
+</select>
+</div>
+<div>
+<label>City</label>
+<input type="text" name="city" required>
+</div>
+</div>
+<label>Complete Address</label>
+<textarea name="address" required></textarea>
+<button type="submit">Create Customer Profile</button>
+</form>
+</div>
+</main>
+</div>
+</body>
+</html>
