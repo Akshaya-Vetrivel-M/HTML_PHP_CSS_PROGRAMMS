@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E8DDF5;
+    color: #35264A;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+.card,
+.result-card {
+    background-color: #FCF9FF;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(80, 45, 110, 0.18);
+}
+
+h1 {
+    text-align: center;
+    color: #6A3D8F;
+    margin-bottom: 15px;
+}
+
+.description {
+    text-align: center;
+    color: #705F7F;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #543174;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C7B1D9;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #F8F2FC;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #8753AA;
+    background-color: #FFFFFF;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8753AA;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6A3D8F;
+}
+
+.success-message {
+    background-color: #EAF8EF;
+    padding: 20px;
+    border-left: 5px solid #3B9B62;
+    border-radius: 8px;
+    margin: 25px 0;
+    line-height: 1.6;
+}
+
+.success-message h2 {
+    color: #287447;
+    margin-bottom: 8px;
+}
+
+.error-message {
+    background-color: #FFECEC;
+    padding: 20px;
+    border-left: 5px solid #D9534F;
+    border-radius: 8px;
+    margin: 25px 0;
+    line-height: 1.6;
+}
+
+.error-message h2 {
+    color: #B52B27;
+    margin-bottom: 8px;
+}
+
+.summary-box {
+    background-color: #F2E9FA;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #D2BDE3;
+    margin-bottom: 18px;
+}
+
+.summary-box h3 {
+    color: #68417F;
+    margin-bottom: 10px;
+}
+
+.summary-box p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8753AA;
+    word-break: break-word;
+}
+
+.back-button {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #6A3D8F;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.back-button:hover {
+    background-color: #4F2B6C;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .card,
+    .result-card {
+        padding: 25px;
+    }
+
+}

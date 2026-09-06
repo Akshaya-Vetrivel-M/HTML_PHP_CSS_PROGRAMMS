@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffd6a5;
+    color: #333333;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+.card,
+.result-card {
+    background-color: #fffaf3;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(120, 70, 20, 0.20);
+}
+
+h1 {
+    text-align: center;
+    color: #9c4f19;
+    margin-bottom: 15px;
+}
+
+.description {
+    text-align: center;
+    color: #795548;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #7b3f16;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d9a066;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #fff4e6;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #c56a20;
+    background-color: #ffffff;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #c56a20;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9c4f19;
+}
+
+.success-message {
+    background-color: #fff0d9;
+    padding: 20px;
+    border-left: 5px solid #e08b35;
+    border-radius: 8px;
+    margin: 25px 0;
+    line-height: 1.6;
+}
+
+.success-message h2 {
+    color: #9c4f19;
+    margin-bottom: 8px;
+}
+
+.error-message {
+    background-color: #ffe6e6;
+    padding: 20px;
+    border-left: 5px solid #d64545;
+    border-radius: 8px;
+    margin: 25px 0;
+    line-height: 1.6;
+}
+
+.error-message h2 {
+    color: #b52b2b;
+    margin-bottom: 8px;
+}
+
+.section-title {
+    color: #9c4f19;
+    margin: 25px 0 15px;
+}
+
+.attendance-list {
+    margin-top: 15px;
+}
+
+.attendance-item {
+    background-color: #fff1df;
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 9px;
+    border: 1px solid #e2bd91;
+    line-height: 1.8;
+}
+
+.attendance-item strong {
+    color: #7b3f16;
+}
+
+.empty-box {
+    background-color: #fff3e3;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #e2c29f;
+    color: #795548;
+}
+
+.back-button {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #9c4f19;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.back-button:hover {
+    background-color: #74370f;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .card,
+    .result-card {
+        padding: 25px;
+    }
+
+    .attendance-item {
+        font-size: 14px;
+    }
+}

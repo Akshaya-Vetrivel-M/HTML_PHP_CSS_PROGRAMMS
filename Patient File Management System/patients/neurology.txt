@@ -1,0 +1,5 @@
+Patient ID: 10001
+Patient Name: Jeeva
+Department: Neurology
+Age: 20
+------------------------

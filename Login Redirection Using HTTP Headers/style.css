@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9c2f0;
+    color: #302040;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 60px auto;
+}
+
+.login-card,
+.result-card,
+.dashboard-card {
+    background-color: #fffaff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(70, 40, 90, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #6a1b9a;
+    margin-bottom: 15px;
+}
+
+.login-card > p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #66516f;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #542078;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #b58dcc;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #faf5ff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #7b1fa2;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7b1fa2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5e167d;
+}
+
+.demo-box {
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center;
+    background-color: #eee1f8;
+    border-radius: 8px;
+    line-height: 1.7;
+    color: #542078;
+}
+
+.error-message {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #ffe1e1;
+    border-left: 5px solid #c62828;
+    border-radius: 8px;
+}
+
+.error-message h2 {
+    color: #b71c1c;
+    margin-bottom: 8px;
+}
+
+.success-message {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #e5f7e5;
+    border-left: 5px solid #2e7d32;
+    border-radius: 8px;
+}
+
+.success-message h2 {
+    color: #256b29;
+    margin-bottom: 8px;
+}
+
+.info-box {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee1f8;
+    border-radius: 10px;
+}
+
+.info-box h3 {
+    color: #6a1b9a;
+    margin-bottom: 8px;
+}
+
+.info-box p {
+    font-weight: bold;
+    color: #542078;
+}
+
+.back-button {
+    display: block;
+    margin-top: 25px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #6a1b9a;
+    color: white;
+    border-radius: 8px;
+}
+
+.back-button:hover {
+    background-color: #4a116d;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .login-card,
+    .result-card,
+    .dashboard-card {
+        padding: 25px;
+    }
+}
